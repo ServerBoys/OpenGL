@@ -16,6 +16,9 @@ int main() {
 		if (glewInit() != GLEW_OK)
 			std::cout << "Failed to initialize GLEW" << std::endl;
 		
+		glEnable(GL_BLEND);
+		glBlendFunc(GL_SRC_ALPHA, GL_ONE_MINUS_SRC_ALPHA);
+		
 		float vertex = window.scaleX(500);
 		float vertex2 = window.scaleY(450);
 		float vertex3 = window.scaleX(300);
@@ -46,6 +49,7 @@ int main() {
 		IndexBuffer::UnbindAll();
 		VertexArray::UnbindAll();
 		Shader::UnbindAll();
+
 
 		while (!window.shouldClose()) {
 			glfwPollEvents();

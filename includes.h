@@ -11,6 +11,7 @@
 #include "IndexBuffer.h"
 #include "VertexBufferLayout.h"
 #include "VertexArray.h"
+#include "Texture.h"
 #include "Window.h"
 #include "Renderer.h"
 #include <iostream>
