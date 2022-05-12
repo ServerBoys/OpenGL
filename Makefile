@@ -1,17 +1,9 @@
 CXX = g++
-#CXX = clang++
 
 EXE = main
 MAJOR = App
-IMGUI_DIR = ./Dependencies/Imgui
-GLFW_DIR = ./Dependencies/GLFW
-MODELS_DIR = ./Models
-# SOURCES = App.cpp
-# SOURCES += $(IMGUI_DIR)/imgui.cpp $(IMGUI_DIR)/imgui_demo.cpp $(IMGUI_DIR)/imgui_draw.cpp $(IMGUI_DIR)/imgui_tables.cpp $(IMGUI_DIR)/imgui_widgets.cpp
-# SOURCES += $(IMGUI_DIR)/backends/imgui_impl_glfw.cpp $(IMGUI_DIR)/backends/imgui_impl_opengl2.cpp
-OBJS = $(addsuffix .o, $(basename $(notdir $(SOURCES))))
-UNAME_S := $(shell uname -s)
-LIB = 
+
+LIBS = 
 SRC_FILES = $(MAJOR).cpp
 OBJ_FILES = $(MAJOR).o
 
@@ -52,6 +44,3 @@ $(EXE): $(OBJ_FILES)
 
 all: $(EXE)
 	@echo Build complete for $(ECHO_MESSAGE)
-
-# clean:
-# 	rm -f $(EXE) $(OBJS)
