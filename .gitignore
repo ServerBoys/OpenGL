@@ -5,3 +5,4 @@ main.exe
 *.o
 c_cpp_properties.json
 *.ini
+CMakeLists.txt
