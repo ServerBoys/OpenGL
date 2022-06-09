@@ -9,7 +9,7 @@ int main() {
 		Window window("Hello World", 800, 600);
 		if (!window.isValid())
 		{
-			glfwTerminate();
+			window.Terminate();
 			return -1;
 		}
 		window.MakeContextCurrent();
@@ -23,6 +23,7 @@ int main() {
 		float vertex2 = window.scaleY(450);
 		float vertex3 = window.scaleX(300);
 		float vertex4 = window.scaleY(250);
+
 		float vertices[] = {
 			vertex3, vertex4,
 			vertex, vertex4,

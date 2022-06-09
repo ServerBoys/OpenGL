@@ -32,6 +32,10 @@ void Window::WindowHint(int hint, int value) const {
 	glfwWindowHint(hint, value);
 }
 
+void Window::Terminate() {
+	glfwTerminate();
+}
+
 void Window::SwapBuffers() const {
 	glfwSwapBuffers(m_Window);
 }

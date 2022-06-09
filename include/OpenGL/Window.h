@@ -15,6 +15,7 @@ public:
 	bool shouldClose() const;
 	void MakeContextCurrent() const;
 	void WindowHint(int hint, int value) const;
+	void Terminate() const;
 	void SwapBuffers() const;
 	void SetViewport() const;
 	inline const float scaleX(float x) const { return 2 * x / m_Width - 1.0f; };
